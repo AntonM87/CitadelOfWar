@@ -1,0 +1,129 @@
+.main-content-block {
+  div.form-registration {
+    border-radius: 10px;
+    width: 70%;
+    background: rgba(235, 236, 239, 0.85);
+
+    form {
+      width: 100%;
+
+      .form-control {
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        div {
+          &:first-child {
+            width: 40%;
+            margin: 1rem 0 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+
+            label {
+              margin-bottom: 0;
+            }
+
+            small {
+              margin-top: 0;
+            }
+          }
+          &:last-child{
+            position: relative;
+            #searchDBStatusEmail,
+            #searchDBStatusNick{
+              font-size: 0.75rem;
+              position: absolute;
+              margin-left: 40%;
+            }
+          }
+        }
+
+        small {
+          line-height: 10px;
+          font-size: 10px;
+        }
+
+        div.input-container {
+          margin-top: 0;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          width: 70%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+
+          select {
+            margin-right: 0 !important;
+          }
+
+          div.captcha {
+            width: 180px;
+            height: 60px;
+          }
+
+          input {
+            transition: $allTransitions;
+            margin-top: 0;
+            width: 50%;
+            height: 2rem;
+            border: #648371 1px solid;
+          }
+
+          a {
+            font-size: 0.75rem;
+            text-align: center;
+          }
+        }
+
+        div.input-container-required {
+          input[type='capcha'] {
+            margin-top: 0;
+            width: 35%;
+          }
+
+          &:after {
+            content: '*';
+            color: red;
+            font-size: 2rem;
+            display: block;
+            position: relative;
+            width: auto;
+            height: auto;
+            top: -5px;
+            left: 2%;
+          }
+        }
+      }
+
+      div.form-control.spam-protection {
+        div {
+          &:nth-child(1) {
+            width: 30%;
+          }
+
+          &:nth-child(2) {
+            img {}
+          }
+        }
+      }
+
+      div {
+        button {
+          background: linear-gradient(45deg, #708f7d 0%, #dbdbe0 50%, #708f7d 100%);
+          color: black;
+          border: #648371 1px solid;
+          margin: 2rem auto;
+          transition: all linear .2s;
+        }
+      }
+    }
+  }
+}

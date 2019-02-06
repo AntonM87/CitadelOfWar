@@ -1,0 +1,13 @@
+//неверный логин пароль/////////////////////////////////////////////////////////////
+#systemErrMsg {
+  position: fixed;
+  display: none;
+  max-width: 300px;
+  height: auto;
+  top: 25px;
+  right: 25px;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  border: black 1px solid;
+}

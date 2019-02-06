@@ -1,0 +1,66 @@
+//content/////////////////////////////////////////////////////////////////////////////////
+.main-content-block {
+  padding-top: 22px;
+  background: url("../img/Chalkboard.jpg") center center no-repeat;
+  background-size: cover;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+
+    .sidebar {
+      border-radius: 10px;
+      width: 45%;
+      background: #6c757d;
+
+      div {
+        margin-left: 0;
+        padding-left: 0 !important;
+
+        ul {
+          h4 {
+            color: white;
+          }
+
+          li {
+            color: white;
+            font-size: 19px;
+            transition: $allTransitions;
+            cursor: pointer;
+
+            &:hover {
+              padding-left: 10px;
+            }
+
+            a {}
+          }
+        }
+      }
+    }
+
+    .text-container {
+      border-radius: 10px;
+      height: 60%;
+      background: #6c757d;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+      h4 strong {
+        color: white;
+      }
+
+      div {
+        color: white;
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+}

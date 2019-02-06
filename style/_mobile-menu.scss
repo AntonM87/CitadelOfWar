@@ -1,0 +1,54 @@
+//mob-menu//////////////////////////////////////////////////////////////////////
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: $mainbackground;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  #closeMobMenu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  ul {
+    li {
+      &:first-child {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      &:last-child {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      text-align: center;
+
+      a {
+        font-size: 22px;
+        color: white;
+        list-style: none;
+      }
+    }
+  }
+
+  span {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}

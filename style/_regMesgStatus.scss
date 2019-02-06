@@ -1,0 +1,18 @@
+.regMessageStatus {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+
+    border-radius: 10px;
+    width: 70%;
+    background: rgba(235, 236, 239, 0.85);
+
+    opacity: 1;
+
+    div{
+        p{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+//coockie//////////////////////////////////////////////////////////////////////
+.cookie-message {
+  z-index: 2;
+  transition: $allTransitions;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -300px;
+
+  .row {
+    div {
+      &:nth-child(2) {
+        border: 1px solid #1b1e21;
+        position: relative;
+        padding: 35px 15px 0 15px;
+        border-radius: 10px 10px 0 0;
+        font-size: 18px;
+        background: $mainbackground;
+        color: white;
+
+        p {
+          width: auto;
+        }
+
+        a {
+          padding-bottom: 10px !important;
+          color: #86ff99;
+
+          &:hover {
+            color: white;
+          }
+        }
+
+        i {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+          transition: $allTransitions;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@media (max-width: 320px) {
+  nav.navbar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: $mainbackground !important;
+
+    a {
+      display: none;
+      width: 160px;
+    }
+
+    button.navbar-toggler[type='submit'] {
+      @include button;
+    }
+
+    button.navbar-toggler[type='button'] {
+      @include button;
+    }
+
+    span#enterReg {
+      display: inline;
+      padding: 3px 6px;
+      border: 1px solid white;
+      margin-left: 0;
+      transition: $allTransitions;
+
+      i#enterReg {
+        &:hover {
+          border: none;
+          background: none;
+        }
+      }
+    }
+
+    form.form-inline {
+      width: 100% !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 !important;
+
+      input.form-control {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 47%;
+        margin-right: 5px;
+
+      }
+
+      button {
+        margin: 0 5px 0 !important;
+        color: white;
+        border: 1px solid white;
+      }
+
+      button.enter {
+        display: inline;
+        color: white;
+        border: 1px solid white;
+      }
+
+      span {
+        margin: 0 5px !important;
+      }
+    }
+  }
+  div.form-control.date-birth-reg{
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+    div{
+      &:first-child{
+        margin-bottom: 0.5rem!important;
+      }
+    }
+  }
+  .form-registration{
+    form{
+      .form-control{
+        div.input-container{
+          margin-left: 5px!important;
+        }
+      }
+    }
+  }
+  //сообщение занята свобода почта
+  #searchDBStatusEmail,
+  #searchDBStatusNick {
+    font-size: 0.5rem;
+    position: absolute;
+    margin-left: 74%!important;
+    margin-top: 1%;
+  }
+}
